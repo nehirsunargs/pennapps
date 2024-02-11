@@ -1,0 +1,38 @@
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif; 
+  background-color: #f4f4f4; 
+  color: #333; 
+}
+
+@media (max-width: 768px) {
+  body {
+      background-color: #eaeaea;
+  }
+}
+
+button {
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #367c2b; 
+}
+
+.applyButton {
+  background-color: #1F4A38;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.applyButton:hover {
+  background-color: #40916C;
+  transform: scale(1.05);
+}

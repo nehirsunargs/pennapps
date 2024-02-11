@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# PennApps Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains the source code for the PennApps website, which serves as the online platform for the PennApps college hackathon hosted at the University of Pennsylvania.
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+The PennApps website provides information about the hackathon, including event details, the application process, and relevant dates. It includes features such as navigation, a countdown timer, and social media links.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Navigation bar for easy access to different sections of the website.
+- Countdown timer displaying the time remaining until the start of the hackathon.
+- "Apply" section providing information about the application process.
+- Footer containing links to the code of conduct, social media profiles, and contact information.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Setup Instructions
 
-### `npm test`
+To set up and run the PennApps website locally, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
 
-### `npm run build`
+   ```bash
+   git clone https://github.com/your-username/pennapps-website.git
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Navigate to the project directory:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   cd pennapps-website
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Install dependencies:
 
-### `npm run eject`
+   ```bash
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Start the development server:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   npm start
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. Open your web browser and go to `http://localhost:3000` to view the website.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## File Structure
 
-## Learn More
+The repository is structured as follows:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+pennapps-website/
+├── node_modules/        # Node modules
+├── public/              # Static assets
+├── src/                 # Source code
+│   ├── components/      # React components
+│   ├── styles/          # CSS stylesheets
+│   └── App.js           # Main application component
+├── .gitignore           # Git ignore file
+├── package.json         # NPM package configuration
+└── README.md            # Project README
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Technologies Used
 
-### Code Splitting
+- React.js
+- JavaScript (ES6+)
+- CSS (with CSS Modules)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## JavaScript Files
 
-### Analyzing the Bundle Size
+- **LandingPage.js**: This file contains the `LandingPage` component, which represents the landing page layout of the application. It includes a banner image, date text, and a countdown timer.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **CountdownTimer.js**: This file contains the `CountdownTimer` component, which displays a countdown timer indicating the time remaining until a specified date.
 
-### Making a Progressive Web App
+- **NavBar.js**: This file contains the `NavBar` component, which represents the navigation bar of the application. It includes links to different sections of the website.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **About.js**: This file contains the `About` component, which provides information about the college hackathon and the PennApps difference.
 
-### Advanced Configuration
+- **Apply.js**: This file contains the `Apply` component, which presents information about the application process for participating in PennApps.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Footer.js**: This file contains the `Footer` component, which represents the footer section of the application. It includes social links, contact information, and acknowledgments.
